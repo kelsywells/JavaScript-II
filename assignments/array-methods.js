@@ -88,9 +88,17 @@ console.log(runners.reduce(reducer));
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-
+//The community center wants to see how many of the runners are just in it for the publicity and don't really care about facility upgrades. Use .filter to determine who spent less than $20 on donations.
+let tinyDonations = donation.filter(donation => donation < 20);
+console.log(tinyDonations);
 
 
 // Problem 2
+// Use .map to double those donations without informing the runners (REMEMBER: it's for a good cause).
+const map = tinyDonations.map(x => x * 2);
+console.log(map);
 
 // Problem 3
+//Use forEach to gather everyone's emails to remind them how seriously they take this fundraiser. 
+let emails = [runners.email];
+runners.forEach(runners => console.log(emails));
